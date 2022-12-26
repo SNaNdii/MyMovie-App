@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/4bcb279047.js" crossorigin="anonymous"></script>    <style>
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        button{
+            margin-left: 20px;
+            height: 30px;
+            border-radius: 30px;
+
+        }
+        input{
+            border: 0px;
+            border-bottom: 1px solid grey;
+            background-color:#1c3f79;
+            color: white;
+            height: 30px;
+            width: 300px;
+            border-radius: 30px;
+            
+        }
+        #container>div{
+            width: 400px;
+            height: 178px;
+            /* border: 1px solid red; */
+            display: flex;
+            margin-bottom: 40px;
+            margin-right: 20px;
+
+        }
+        #container>div:hover{
+            box-shadow: rgba(255, 255, 255, 0.50) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;       
+        }
+        #boxl{
+            width: 40%;
+            /* border: 1px solid black; */
+        }
+        #boxr{
+            width: 60%;
+            /* border: 1px solid black; */
+            background-color: whitesmoke;
+
+        }
+        body{
+            background-image: url("https://www.toptrendz.net/wp-content/uploads/2018/04/Movierulz.jpg");
+            background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+        }
+        #input{
+            margin-left: 40%
+        }
+        input::-webkit-input-placeholder{
+            color: white;
+            text-align: center;
+        }
+        #error{
+            margin-left: 550px;
+            width: 300px;
+            margin-top: 20px;
+        }
+        i{
+            color: white;
+        }
+        </style>
+</head>
+<body>
+    <div id="input">
+        <input type="text" placeholder="SEARCH" id="search"><i class="fas fa-search"></i>
+        <button onclick="press()">Search</button>
+        
+    </div>
+    <div id="container">
+        
+    </div>
+</body>
+</html>
+<script src="index.js"></script>
